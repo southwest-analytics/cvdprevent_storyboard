@@ -1,12 +1,28 @@
-# Load libraries ----
-# ~~~~~~~~~~~~~~~~~~~
+# 0. Load libraries and define functions ----
+# ═══════════════════════════════════════════
 
 library(httr)
 library(jsonlite)
 library(tidyverse)
 
-# Get CVDPrevent data for storyboard ----
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 1. Get CVDPrevent data ----
+# ═══════════════════════════
+
+# Get the latest time period
+qry <- 'https://api.cvdprevent.nhs.uk/timePeriod'
+res <- GET(qry)
+latest_period_id <- max(fromJSON(rawToChar(res$content))$timePeriodList$TimePeriodID)
+
+# Get areas
+
+str(res$content)
+# Get areas
+qry <- 'https://api.cvdprevent.nhs.uk/area/systemLevel?timePeriodID=15'
+res <- GET(qry)
+df_tmp = fromJSON(rawToChar(res$content))
+
+
+
 
 # Based on the slide deck from Chief Pharmacist at NHS Somerset ICB the following indicators will be downloaded
 
@@ -24,6 +40,7 @@ library(tidyverse)
 
 # Note: Not all data is available at all 5 levels of organisation above
 
+sprintf('https://api.cvdprevent.nhs.uk/indicator/%d/rawDataJSON?timePeriodID=%d&systemLevelID=%d', indicatorIDList[1], timePeriodList[1], systemLevelList[1])
 timePeriodList = c(10)
 systemLevelList = c(1, 6, 7, 4, 5)
 indicatorIDList = c(1, 8, 12, 11, 7, 13, 9, 14, 4, 19,

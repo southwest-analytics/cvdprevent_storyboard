@@ -1,0 +1,307 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+      
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="NONE,NOARCHIVE" />
+      
+
+      <title>Spending By Org – Django REST framework</title>
+
+      
+        
+          <script src="/cdn-cgi/apps/head/fqDIqF2ZRUQLV4S_KP2PWXR2RSo.js"></script><link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.ff36ce57a168.css"/>
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.cbe3c495d08a.css"/>
+        
+
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.a987f72342ee.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.de7946f2473d.css"/>
+        
+      
+
+    
+  </head>
+
+  
+  <body class="">
+
+    <div class="wrapper">
+      
+        <div class="navbar navbar-static-top navbar-inverse"
+             role="navigation" aria-label="navbar">
+          <div class="container">
+            <span>
+              
+                <a class='navbar-brand' rel="nofollow" href='https://www.django-rest-framework.org/'>
+                    Django REST framework
+                </a>
+              
+            </span>
+            <ul class="nav navbar-nav pull-right">
+              
+                
+                  
+                
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <div class="container">
+        
+          <ul class="breadcrumb">
+            
+              
+                <li class="active"><a href="/api/1.0/spending_by_org/">Spending By Org</a></li>
+              
+            
+          </ul>
+        
+
+        <!-- Content -->
+        <div id="content" role="main" aria-label="content">
+          
+
+          <div class="region"  aria-label="request form">
+          
+
+          
+            <form id="get-form" class="pull-right">
+              <fieldset>
+                
+                  <div class="btn-group format-selection">
+                    <a class="btn btn-primary js-tooltip" href="/api/1.0/spending_by_org/?org_type=pcn&amp;code=0212000AMAA&amp;date=2024-03-01&amp;org=15N" rel="nofollow" title="Make a GET request on the Spending By Org resource">GET</a>
+
+                    <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="/api/1.0/spending_by_org/?code=0212000AMAA&amp;date=2024-03-01&amp;format=json&amp;org=15N&amp;org_type=pcn" rel="nofollow" title="Make a GET request on the Spending By Org resource with the format set to `json`">json</a>
+                        </li>
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="/api/1.0/spending_by_org/?code=0212000AMAA&amp;date=2024-03-01&amp;format=api&amp;org=15N&amp;org_type=pcn" rel="nofollow" title="Make a GET request on the Spending By Org resource with the format set to `api`">api</a>
+                        </li>
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="/api/1.0/spending_by_org/?code=0212000AMAA&amp;date=2024-03-01&amp;format=csv&amp;org=15N&amp;org_type=pcn" rel="nofollow" title="Make a GET request on the Spending By Org resource with the format set to `csv`">csv</a>
+                        </li>
+                      
+                    </ul>
+                  </div>
+                
+              </fieldset>
+            </form>
+          
+
+          
+            <form class="button-form" action="/api/1.0/spending_by_org/?org_type=pcn&amp;code=0212000AMAA&amp;date=2024-03-01&amp;org=15N" data-method="OPTIONS">
+              <button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the Spending By Org resource">OPTIONS</button>
+            </form>
+          
+
+          
+
+          
+
+          
+
+          
+          </div>
+
+            <div class="content-main" role="main"  aria-label="main content">
+              <div class="page-header">
+                <h1>Spending By Org</h1>
+              </div>
+              <div class="pull-left">
+                
+                  <p></p>
+                
+              </div>
+
+              
+
+              <div class="request-info" aria-label="request info">
+                <pre class="prettyprint"><b>GET</b> /api/1.0/spending_by_org/?org_type=pcn&amp;code=0212000AMAA&amp;date=2024-03-01&amp;org=15N</pre>
+              </div>
+
+              <div class="response-info" aria-label="response info">
+                <pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, OPTIONS</span>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+
+</span>[
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.06,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U21059&quot;,
+        &quot;row_name&quot;: &quot;NORTH DEVON COASTAL PCN&quot;
+    },
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.05,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U27932&quot;,
+        &quot;row_name&quot;: &quot;WEB PCN&quot;
+    },
+    {
+        &quot;items&quot;: 2,
+        &quot;quantity&quot;: 2.0,
+        &quot;actual_cost&quot;: 94.12,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U32372&quot;,
+        &quot;row_name&quot;: &quot;OUTER EXETER PCN&quot;
+    },
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.06,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U34388&quot;,
+        &quot;row_name&quot;: &quot;CULM VALLEY PCN&quot;
+    },
+    {
+        &quot;items&quot;: 10,
+        &quot;quantity&quot;: 10.0,
+        &quot;actual_cost&quot;: 470.59,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U40115&quot;,
+        &quot;row_name&quot;: &quot;LIVEWELL MAYFLOWER PCN&quot;
+    },
+    {
+        &quot;items&quot;: 2,
+        &quot;quantity&quot;: 2.0,
+        &quot;actual_cost&quot;: 94.12,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U40951&quot;,
+        &quot;row_name&quot;: &quot;MID DEVON HEALTHCARE PCN&quot;
+    },
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.06,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U41591&quot;,
+        &quot;row_name&quot;: &quot;COAST AND COUNTRY PCN&quot;
+    },
+    {
+        &quot;items&quot;: 2,
+        &quot;quantity&quot;: 2.0,
+        &quot;actual_cost&quot;: 94.12,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U50322&quot;,
+        &quot;row_name&quot;: &quot;BARNSTAPLE ALLIANCE PCN&quot;
+    },
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.06,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U55397&quot;,
+        &quot;row_name&quot;: &quot;THE COASTAL NETWORK PCN&quot;
+    },
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.06,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U68552&quot;,
+        &quot;row_name&quot;: &quot;BEACON MEDICAL GROUP PCN&quot;
+    },
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.05,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U69865&quot;,
+        &quot;row_name&quot;: &quot;PATHFIELDS MEDICAL GROUP PCN&quot;
+    },
+    {
+        &quot;items&quot;: 3,
+        &quot;quantity&quot;: 3.0,
+        &quot;actual_cost&quot;: 141.18,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U76444&quot;,
+        &quot;row_name&quot;: &quot;EXETER WEST PCN&quot;
+    },
+    {
+        &quot;items&quot;: 2,
+        &quot;quantity&quot;: 2.0,
+        &quot;actual_cost&quot;: 94.1,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U79574&quot;,
+        &quot;row_name&quot;: &quot;HONITON/OTTERY/SID VALLEY (HOSMS) PCN&quot;
+    },
+    {
+        &quot;items&quot;: 3,
+        &quot;quantity&quot;: 3.0,
+        &quot;actual_cost&quot;: 141.18,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U87755&quot;,
+        &quot;row_name&quot;: &quot;TORQUAY PCN&quot;
+    },
+    {
+        &quot;items&quot;: 3,
+        &quot;quantity&quot;: 3.0,
+        &quot;actual_cost&quot;: 141.17,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U87914&quot;,
+        &quot;row_name&quot;: &quot;BRIXHAM AND PAIGNTON PCN&quot;
+    },
+    {
+        &quot;items&quot;: 1,
+        &quot;quantity&quot;: 1.0,
+        &quot;actual_cost&quot;: 47.06,
+        &quot;date&quot;: &quot;2024-03-01&quot;,
+        &quot;row_id&quot;: &quot;U91913&quot;,
+        &quot;row_name&quot;: &quot;NORTH DARTMOOR PCN&quot;
+    }
+]</pre>
+              </div>
+            </div>
+
+            
+              
+
+              
+            
+          
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+    
+
+    
+      <script type="application/json" id="drf_csrf">
+        {
+          "csrfHeaderName": "X-CSRFTOKEN",
+          "csrfToken": "U0QwLdovga1PMAK0GE5lehjVqmODlIUEpq9CuW7fvpYBYW2hGNJqJxiJ1nyaalN6"
+        }
+      </script>
+      <script src="/static/rest_framework/js/jquery-3.7.1.min.2c872dbe60f4.js"></script>
+      <script src="/static/rest_framework/js/ajax-form.4e1cdcb7acab.js"></script>
+      <script src="/static/rest_framework/js/csrf.455080a7b2ce.js"></script>
+      <script src="/static/rest_framework/js/bootstrap.min.abda843684d0.js"></script>
+      <script src="/static/rest_framework/js/prettify-min.709bfcc456c6.js"></script>
+      <script src="/static/rest_framework/js/default.89dc3ae23594.js"></script>
+      <script src="/static/rest_framework/js/load-ajax-form.8cdb3a9f3466.js"></script>
+    
+
+  </body>
+  
+</html>
+
